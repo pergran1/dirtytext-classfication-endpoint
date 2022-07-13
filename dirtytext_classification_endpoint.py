@@ -29,11 +29,6 @@ def about():
     return {"About": "Me"}
 
 
-# http://127.0.0.1:8000/get-item/1
-@app.get("/get-item/{item_id}")
-def get_item(item_id: int):  # specificera att det ska vara en int
-    return inventory[item_id]
-
 
 @app.get("/text-classification/{fanfic_text}")
 def get_text_classification(fanfic_text: str, get_word: bool = False):
