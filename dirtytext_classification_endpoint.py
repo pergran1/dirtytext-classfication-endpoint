@@ -1,7 +1,6 @@
 # https://www.youtube.com/watch?v=-ykeT6kk4bk&t=1240s
 
 import pandas as pd
-from datetime import datetime
 from river.naive_bayes import MultinomialNB
 from river.feature_extraction import BagOfWords, TFIDF
 from river.compose import Pipeline
