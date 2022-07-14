@@ -5,7 +5,6 @@ from datetime import datetime
 from river.naive_bayes import MultinomialNB
 from river.feature_extraction import BagOfWords, TFIDF
 from river.compose import Pipeline
-
 from fastapi import FastAPI
 
 data = pd.read_csv('fanfic_test.csv')
