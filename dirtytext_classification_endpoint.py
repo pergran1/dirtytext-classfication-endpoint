@@ -17,12 +17,6 @@ app = FastAPI()
 
 
 
-# skapa get endpoint
-@app.get("/")
-def home():
-    return {"Data": "Testing"}
-
-
 @app.get("/about")
 def about():
     return {"About": "Me"}
