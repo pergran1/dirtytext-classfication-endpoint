@@ -14,7 +14,9 @@ for text, label in data:
     model = model.learn_one(text, label)
 app = FastAPI()
 
-
+@app.get("/")
+def about():
+    return {"test": "Me"}
 
 @app.get("/about")
 def about():
