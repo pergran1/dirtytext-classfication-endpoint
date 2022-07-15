@@ -1,5 +1,5 @@
 # https://www.youtube.com/watch?v=-ykeT6kk4bk&t=1240s
-
+# https://dirty-text-classification.herokuapp.com/docs#  link to the url endpoint
 import pandas as pd
 from river.naive_bayes import MultinomialNB
 from river.feature_extraction import BagOfWords, TFIDF
