@@ -14,13 +14,12 @@ for text, label in data:
     model = model.learn_one(text, label)
 app = FastAPI()
 
-@app.get("/")
-def about():
-    return {"test": "Me"}
+
 
 @app.get("/about")
 def about():
-    return {"About": "Me"}
+    return {"About": "This is a endpoint made by Per Granberg", 'usecase': 'A text classification endpoint to see if '
+                                                                           'a text might be inappropriate'}
 
 
 
